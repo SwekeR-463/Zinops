@@ -68,7 +68,7 @@ python tests.py
 
 The implementation evolved through debugging many errors:
 
-1. **EinopsError: Transpose Axes Mismatch** - Misapplied transpose logic to splits (e.g., `'(h w) c -> h w c'`); you suggested distinct operation handling; fixed with operation-specific validation.
+1. **EinopsError: Transpose Axes Mismatch** - Misapplied transpose logic to splits (e.g., `'(h w) c -> h w c'`); fixed with operation-specific validation.
 2. **ValueError: Split/Merge Shape Mismatch** - Reshape mismatches (e.g., 12 to `(3, 4, 4, 1)`); resolved by single reshape and component checks.
 3. **ValueError: General Size Mismatch** - Incorrect split reshapes (e.g., 12 to `(3, 4, 4, 1)`); fixed with single-pass reshaping.
 4. **AssertionError: Ellipsis Shape Mismatch** - Wrong ellipsis shape (`(4, 5, 6)` vs `(2, 3, 20)`); adjusted ellipsis handling.
