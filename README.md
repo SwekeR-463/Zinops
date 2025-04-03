@@ -39,7 +39,6 @@ pip install numpy
 ```
 
 ## Usage
-See `zinops.py`
 ```python
 import numpy as np
 from zinops import rearrange
