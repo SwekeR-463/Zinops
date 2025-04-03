@@ -30,7 +30,7 @@ This project implements a subset of the `einops` library's `rearrange` function,
 
 Clone or download this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/SwekeR-463/Zinops.git
 ```
 
 Install dependency:
