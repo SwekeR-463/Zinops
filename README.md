@@ -45,11 +45,11 @@ import numpy as np
 from zinops import rearrange
 
 # Transpose
-x = np.arange(12).reshape(3, 4)
+x = np.random.rand(3, 4)
 result = rearrange(x, 'h w -> w h')  # Shape: (4, 3)
 
 # Split
-x = np.arange(12).reshape(12, 1)
+x = np.random.rand(12, 1)
 result = rearrange(x, '(h w) c -> h w c', h=3)  # Shape: (3, 4, 1)
 
 # Merge with reorder
