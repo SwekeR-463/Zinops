@@ -1,11 +1,11 @@
 # Zinops -> Einops from Scratch
 
-A from-scratch implementation of einops-style tensor rearrangement in Python using NumPy.
+A from-scratch implementation of einops-style tensor rearrangement in Python using NumPy.<br>
+[**Colab Link**](https://colab.research.google.com/drive/1Fm8V214KR06Jx4Fu4J0NRJxA-eGM4LiC?usp=sharing)
 
 ## Overview
 
 This project implements a subset of the `einops` library's `rearrange` function, supporting tensor operations like transpose, split, merge, repeat, and ellipsis-based transformations.
-[Colab Link](https://colab.research.google.com/drive/1Fm8V214KR06Jx4Fu4J0NRJxA-eGM4LiC?usp=sharing)
 
 ## Approach
 
